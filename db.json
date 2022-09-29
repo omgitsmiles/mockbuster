@@ -1,0 +1,124 @@
+{
+    "movies": [
+    {
+        "id": 1,
+        "title": "Lion King",
+        "description": "LIONS",
+        "image": "https://imgix.bustle.com/2017/2/13/69251870-b356-4e05-9696-5459ee4301e4.jpg?w=414&h=678&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"       
+    },
+    {
+        "id": 2,
+        "title": "Jumanji",
+        "description": "board games",
+        "image": "https://imgix.bustle.com/2017/2/13/93704543-4ecf-4f12-adb2-ab5da81a56bc.jpg?w=414&h=726&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 3,
+        "title": "Aladdin",
+        "description": "magic carpet",
+        "image": null
+    },
+    {
+        "id": 4,
+        "title": "Beauty And The Beast",
+        "description": "Tale as old as time",
+        "image": "https://imgix.bustle.com/2017/2/13/04fbf5ca-fd79-40d9-bc26-ea28e7b92cde.png?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 5,
+        "title": "Who Framed Roger Rabbit",
+        "description": "I'm not bad, I was just drawn that way",
+        "image": "https://imgix.bustle.com/2017/2/13/ec97122d-9f1d-4c36-a2e4-ddd61147e3ba.jpg?w=414&h=726&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 6,
+        "title": "Karate Kid",
+        "description": "Wax On, Wax Off",
+        "iamge": "https://imgix.bustle.com/2017/2/13/880391ce-2849-4514-8605-2c099e768f07.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 7,
+        "title": "Ghostbusters",
+        "description": "I ain't afraid of no ghost",
+        "image": "https://imgix.bustle.com/2017/2/13/70cc20c3-6741-42f8-885f-e46c5d81d856.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 8,
+        "title": "Mrs. Doubtfire",
+        "description": "Never watched this tbh",
+        "image": "https://imgix.bustle.com/2017/2/13/33b517b8-2980-4311-a89b-0384ccb1cee5.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 9,
+        "title": "Jurrasic Park",
+        "description": "Life, finds a way",
+        "image": null
+    },
+    {
+        "id": 10,
+        "title": "Honey, I Shrunk The Kids",
+        "description": "Rick Moranis is the goat",
+        "image": "https://imgix.bustle.com/2017/2/13/a9dd7457-88e7-405f-a534-c6c4ca92ed35.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 11,
+        "title": "The Monster Squad",
+        "description": "No Clue",
+        "image": null
+    },
+    {
+        "id": 12,
+        "title": "Toy Story",
+        "description": "To Infinity, and Beyond",
+        "image": "https://imgix.bustle.com/2017/2/13/191a7b99-7418-4c89-9d52-11acd2b2d505.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 13,
+        "title": "The Mighty Ducks",
+        "description": "Flying V",
+        "image": "https://imgix.bustle.com/2017/2/13/19fd527b-0861-407a-896e-9d7d01265d96.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 14,
+        "title": "Homeward Bound: The Incredible Journey",
+        "description": "Is this airbud?",
+        "image": "https://imgix.bustle.com/2017/2/13/e72f4ca6-1006-45ec-9cc1-942ee5488e4a.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 15,
+        "title": "The Mask",
+        "description": "Somebody stop me",
+        "image": "https://imgix.bustle.com/2017/2/13/aaca12af-1f2a-4215-b62b-8f3f9cb690e5.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 16,
+        "title": "Home Alone",
+        "description": "keep the change ya filthy animal",
+        "image": "https://imgix.bustle.com/2017/2/13/dfd3317e-5f55-4708-9ab3-bf25a7001cc6.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 17,
+        "title": "Hocus Pocus",
+        "description": "Sequel coming out 25 years later",
+        "image": "https://imgix.bustle.com/2017/2/13/f803c37a-acf9-4dd3-ba13-158753fa7d2b.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 18,
+        "title": "The Land Before Time",
+        "description": "Dinosaurs but cute",
+        "image": "https://imgix.bustle.com/2017/2/13/665e6788-3ecc-4a49-8510-654e80e0c16b.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 19,
+        "title": "Gremlins",
+        "description": "lil monsters",
+        "image": "https://imgix.bustle.com/2017/2/13/46d2b2b4-be26-490b-b6dd-65281c44f32d.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    },
+    {
+        "id": 20,
+        "title": "The NeverEnding Story",
+        "description": "ATREYU",
+        "image": "https://imgix.bustle.com/2017/2/13/0f106b8c-3824-4ff3-8a8a-f39bb26dd857.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
+    }
+    ]
+}
