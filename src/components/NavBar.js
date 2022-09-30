@@ -1,24 +1,20 @@
 import React from "react";
-import mockbuster from "../assets/mockbuster.jpeg"
+import mockbuster from "../assets/mockbuster.PNG"
 import { NavLink, Link } from "react-router-dom"
 import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 
 function Header() {
     return (
+      
         <nav className="navHeader">
           <NavLink to="/home"><img style={{ width: 175, height: 100 }} src={mockbuster} alt="mockbuster"/></NavLink>
-          <span>
-            <Link className="navRight" to="/SignIn"><Button>Login</Button></Link>
-          </span>
-          <span>
+            <Link className="navRight" to="/signin"><Button>Login</Button></Link>
             <Link className="navRight"><Button>MY CART</Button></Link>
-          </span>
-          <span>
             <Link className="navRight"><Button>BLOG</Button></Link>
             <Link className="navLeft"><Button>ABOUT</Button></Link>
-            <Link className="navLeft"><Button>CONTACT</Button></Link>
-          </span>
+            <Link className="navLeft"><Button>CONTACT</Button></Link> 
         </nav>
     )
 }
