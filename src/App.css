@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1030AD;
 }
 
 .App-logo {
@@ -35,4 +36,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navRight {
+  float: right;
+}
+
+.navLeft {
+  float: left;
+}
+
+.navHeader {
+  background-color: #FFFFFF;
 }

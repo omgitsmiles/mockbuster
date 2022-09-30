@@ -1,5 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
+import { CardActionArea } from '@mui/material';
 
 function MoviesPage({movies}) {
 
