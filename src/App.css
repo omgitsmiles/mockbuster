@@ -40,12 +40,16 @@
 
 .navRight {
   float: right;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
 }
 
 .navLeft {
   float: left;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
 }
 
 .navHeader {
-  background-color: #FFFFFF;
+  background-color: #FFCC00;
 }

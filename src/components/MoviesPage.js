@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-import { CardActionArea } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
 function MoviesPage({movies}) {
 
@@ -9,9 +9,17 @@ function MoviesPage({movies}) {
     ))
 
     return (
-        <div>
+        <main>
+            <TextField
+              className="navLeft"
+              label="Search Movies"
+              id="standard-size-small"
+              defaultValue="Movies"
+              size="small"
+              variant="standard"
+              />
                 {renderMovies}
-        </div>
+        </main>
     )
 }
 
