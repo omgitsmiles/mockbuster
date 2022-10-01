@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import MoviesPage from './components/MoviesPage';
 import SignIn from './components/SignIn';
 import About from './components/About';
-import Contact from './components/Contact';
+import AddMovie from './components/AddMovie';
 import MyCart from './components/MyCart';
 
 function App() {
@@ -34,14 +34,14 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/contact">
-          <Contact />
+        <Route path="/addmovie">
+          <AddMovie />
         </Route>
         <Route path="/mycart">
           <MyCart />
         </Route>
         <Route exact path="*">
-          <h1>BE KIND, REWIND</h1>
+          <h1> 404 BE KIND, REWIND</h1>
         </Route>
       </Switch>
     </div>

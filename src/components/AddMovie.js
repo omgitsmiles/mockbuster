@@ -1,11 +1,11 @@
 import React from "react";
 
-function Contact() {
+function AddMovie() {
     return (
         <div>
-            CONTACT
+            ADD MOVIE
         </div>
     )
 }
 
-export default Contact
+export default AddMovie
