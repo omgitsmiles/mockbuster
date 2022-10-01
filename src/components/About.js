@@ -9,6 +9,7 @@ function About({ movies, setMovies }) {
     function handleNewDescription(e) {
         e.preventDefault()
         const searched = movies.find(movie => captureTitle.toLowerCase().includes(movie.title.toLowerCase()))
+        if (searched !== undefined) {
         fetch(`http://localhost:3004/movies/${searched.id}`, {
             method: "PATCH",
             headers: {
@@ -22,6 +23,9 @@ function About({ movies, setMovies }) {
             setMovies(updated)
         }))
         alert("Description has been updated!")
+     } else {
+        alert("Write out the full name of the movie!")
+     } 
     }
 
     return (
