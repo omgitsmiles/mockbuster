@@ -1,6 +1,9 @@
 import React from "react";
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
+import Alert from '@mui/material/Alert';
 
 function MyCart({ cart, setCart }) {
 
@@ -9,9 +12,13 @@ function MyCart({ cart, setCart }) {
         setCart(deleted)
     }
 
+    // function handleRent() {
+      
+    // }
+
     const renderCart = cart.map(movie => (
-    <div className="cartCard">
-        <h3 key={movie.id}>{movie.title}</h3>
+    <div className="cartCard" key={movie.id}>
+        <h3>{movie.title}</h3>
         <img src={movie.image} width={100} height={100} alt={movie.title}/>
         <div>
             <IconButton aria-label="delete" onClick={() => handleDelete(movie.id)}>
@@ -25,6 +32,11 @@ function MyCart({ cart, setCart }) {
         <div>
            <h1>MY CART</h1>
            {renderCart}
+           <div>{cart.length === 0 ? ( 
+           <Link to="/home"><Button style={{ textDecoration: "none" }} variant="contained">Return to shop</Button></Link> ) :
+            ( <Button variant="contained">RENT!</Button> )
+           }
+           </div>
         </div>
     )
 }
