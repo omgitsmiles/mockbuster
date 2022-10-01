@@ -3,14 +3,13 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 function AddMovie({ handleNewMovie }) {
-    const [id, setID] = useState(0)
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
     const [image, setImage] = useState("")
 
     function onFormSubmit(e) {
         e.preventDefault()
-        const newMovie = {id: id, title: title, description: description, image: image}
+        const newMovie = {title: title, description: description, image: image}
         alert("Come back soon, we'll have your movie in no time!")
         fetch("http://localhost:3004/movies", {
             method: "POST",

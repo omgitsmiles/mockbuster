@@ -14,20 +14,20 @@ function MyCart({ cart, setCart }) {
     function handleRent() {
         const rented = cart.filter(movie => !cart.includes(movie))
         setCart(rented)
-        alert("Your rentals will not ship because this isn't real!")
+        alert("Your rentals are on the way!")
     }
 
     const renderCart = cart.map(movie => (
-    <div className="cartCard" key={movie.id}>
-        <h3>{movie.title}</h3>
-        <img src={movie.image} width={100} height={100} alt={movie.title}/>
-        <div>
-            <IconButton aria-label="delete" onClick={() => handleDelete(movie.id)}>
-                <DeleteIcon />
-            </IconButton>
+        <div className="cartCard" key={movie.id}>
+            <h3>{movie.title}</h3>
+            <img src={movie.image} width={100} height={100} alt={movie.title}/>
+            <div>
+                <IconButton aria-label="delete" onClick={() => handleDelete(movie.id)}>
+                    <DeleteIcon />
+                </IconButton>
+            </div>
         </div>
-    </div>
-    ))
+        ))
 
     return (
         <div>

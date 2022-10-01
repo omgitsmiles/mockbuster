@@ -34,7 +34,7 @@ function MovieCard({ movie, setCart, cart }){
         </CardContent>
       </CardActionArea>
       <CardActions>{rent ? (
-      <Button variant="contained" onClick={() => handleClick(movie)} className="rentBtn" >Rent</Button> ) : (
+      <Button variant="contained" onClick={() => handleClick(movie)} className="rentBtn">Rent</Button> ) : (
       <Button variant="contained" className="rentBtn" disabled>In Cart</Button> )
         }
       </CardActions>

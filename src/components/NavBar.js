@@ -148,15 +148,3 @@ function ResponsiveAppBar ({ cart }) {
   );
 };
 export default ResponsiveAppBar;
-
-
-
-
-{/* <nav className="container-fluid">
-<NavLink to="/home"><img style={{ width: 175, height: 100 }} src={mockbuster} alt="mockbuster"/></NavLink>
-  <Link className="ml-auto" to="/signin"><Button>Login</Button></Link>
-  <Link className="ml-auto" to="/mycart"><Button>MY CART</Button></Link>
-  <Link className="ml-auto"to="/blog"><Button>BLOG</Button></Link>
-  <Link className="ml-auto" to="/about"><Button>ABOUT</Button></Link>
-  <Link className="navLeft" to="/contact"><Button>CONTACT</Button></Link> 
-</nav> */}
