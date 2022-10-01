@@ -12,14 +12,15 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import mockbuster from "../assets/mockbuster.PNG"
 import { NavLink, Link } from "react-router-dom"
 
 
-const pages = ['home', 'about', 'contact', "mycart"];
-const settings = ['Sign In'];
+const pages = ['home', 'about', 'contact', 'signin'];
+const settings = ['mycart'];
 
-function ResponsiveAppBar () {
+function ResponsiveAppBar ({ cart }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -114,7 +115,8 @@ function ResponsiveAppBar () {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Paolo Alberca" src="/static/images/avatar/2.jpg" />
+                <ShoppingCartCheckoutIcon />
+                {/* <Avatar alt="Paolo Alberca" src="/static/images/avatar/2.jpg" /> */}
               </IconButton>
             </Tooltip>
             <Menu
@@ -136,7 +138,7 @@ function ResponsiveAppBar () {
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">
-                  <Link style={{ textDecoration: "none", color: "black" }} to='/signin'>{setting}</Link>
+                  <Link style={{ textDecoration: "none", color: "black" }} to='/mycart'>My Cart ({cart.length})</Link>
                   </Typography>
                 </MenuItem>
               ))}

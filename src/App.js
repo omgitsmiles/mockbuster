@@ -10,6 +10,7 @@ import MyCart from './components/MyCart';
 
 function App() {
   const [movies, setMovies] = useState([])
+  const [cart, setCart] = useState([])
   
   useEffect(() => {
     fetch("http://localhost:3004/movies")
@@ -17,13 +18,15 @@ function App() {
     .then(setMovies)
   }, [])
 
+
+  console.log(cart)
   
   return (
     <div className="App">
-      <ResponsiveAppBar />
+      <ResponsiveAppBar cart={cart}/>
       <Switch>
         <Route exact path="/home">
-          <MoviesPage movies={movies}/>
+          <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
         </Route>
         <Route path="/signin">
           <SignIn />

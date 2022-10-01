@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 import TextField from '@mui/material/TextField';
 
 
-function MoviesPage({ movies }) {
+function MoviesPage({ movies, setCart, cart }) {
     const [search, setSearch] = useState("")
 
     const filterSearch = movies.filter(movie => {
@@ -11,7 +11,7 @@ function MoviesPage({ movies }) {
     })
 
     const renderMovies = filterSearch.map(movie => (
-        <MovieCard key={movie.id} movie={movie}/>
+        <MovieCard key={movie.id} movie={movie} setCart={setCart} cart={cart}/>
     ))
 
     return (

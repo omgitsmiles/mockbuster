@@ -49,9 +49,15 @@
   margin: 1rem 2rem;
 }
 
+.cImage {
+  height: 9rem;
+  width: 100%;
+  object-fit: scale-down;
+}
+
 .rentBtn {
   position: fixed;
-  left: 30%;
+  left: 34%;
 }
 
 
