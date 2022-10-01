@@ -12,9 +12,11 @@ function MyCart({ cart, setCart }) {
         setCart(deleted)
     }
 
-    // function handleRent() {
-      
-    // }
+    function handleRent() {
+        const rented = cart.filter(movie => !cart.includes(movie))
+        setCart(rented)
+        
+    }
 
     const renderCart = cart.map(movie => (
     <div className="cartCard" key={movie.id}>
@@ -34,8 +36,9 @@ function MyCart({ cart, setCart }) {
            {renderCart}
            <div>{cart.length === 0 ? ( 
            <Link to="/home"><Button style={{ textDecoration: "none" }} variant="contained">Return to shop</Button></Link> ) :
-            ( <Button variant="contained">RENT!</Button> )
+            ( <Button variant="contained" onClick={handleRent}>RENT!</Button> )
            }
+           <Alert severity="success">This is a success alert — check it out!</Alert>
            </div>
         </div>
     )
