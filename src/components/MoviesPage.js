@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import MovieCard from "./MovieCard";
 import TextField from '@mui/material/TextField';
 
 
-function MoviesPage({movies}) {
+function MoviesPage({ movies }) {
+    const [search, setSearch] = useState("")
 
-    const renderMovies = movies.map(movie => (
+    const filterSearch = movies.filter(movie => {
+        return movie.title.toLowerCase().includes(search.toLowerCase())
+    })
+
+    const renderMovies = filterSearch.map(movie => (
         <MovieCard key={movie.id} movie={movie}/>
     ))
 
@@ -13,13 +18,7 @@ function MoviesPage({movies}) {
         <main>
             <br></br>
         <div>
-        <TextField
-          style={{ color: "white" }}
-          label="Search Movies"
-          id="outlined-size-small"
-          placeholder="Search"
-          size="small"
-        />
+        <TextField className="searchBar" id="filled-basic" label="Search Movies" variant="filled" onChange={(e) => setSearch(e.target.value)}/>
         </div>
             {renderMovies}
         </main>

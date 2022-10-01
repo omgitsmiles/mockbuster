@@ -16,7 +16,7 @@ import mockbuster from "../assets/mockbuster.PNG"
 import { NavLink, Link } from "react-router-dom"
 
 
-const pages = ['home', 'about', 'contact'];
+const pages = ['home', 'about', 'contact', "mycart"];
 const settings = ['Sign In'];
 
 function ResponsiveAppBar () {

@@ -51,7 +51,7 @@
 
 .rentBtn {
   position: fixed;
-  left: 35%;
+  left: 30%;
 }
 
 
@@ -61,7 +61,7 @@
   }
   
   .searchBar {
-
+    background-color: aliceblue;
   }
   
 /* .navRight {
