@@ -7,12 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCart';
 import mockbuster from "../assets/mockbuster.PNG"
 import { NavLink, Link } from "react-router-dom"
 
@@ -43,7 +42,7 @@ function ResponsiveAppBar ({ cart }) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <NavLink to="/home"><img style={{ width: 175, height: 75 }} src={mockbuster} alt="mockbuster"/></NavLink>
+            <Link to="/home"><img style={{ width: 175, height: 75 }} src={mockbuster} alt="mockbuster"/></Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -116,7 +115,6 @@ function ResponsiveAppBar ({ cart }) {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <ShoppingCartCheckoutIcon />
-                {/* <Avatar alt="Paolo Alberca" src="/static/images/avatar/2.jpg" /> */}
               </IconButton>
             </Tooltip>
             <Menu

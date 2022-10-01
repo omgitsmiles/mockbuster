@@ -49,6 +49,11 @@
   margin: 1rem 2rem;
 }
 
+.cartCard {
+  display: inline-block;
+  padding: 2rem;
+}
+
 .cImage {
   height: 9rem;
   width: 100%;

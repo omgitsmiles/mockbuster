@@ -18,8 +18,6 @@ function App() {
     .then(setMovies)
   }, [])
 
-
-  console.log(cart)
   
   return (
     <div className="App">
@@ -38,7 +36,7 @@ function App() {
           <AddMovie />
         </Route>
         <Route path="/mycart">
-          <MyCart />
+          <MyCart cart={cart} setCart={setCart}/>
         </Route>
         <Route exact path="*">
           <h1> 404 BE KIND, REWIND</h1>
