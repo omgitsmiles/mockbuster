@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCart';
 import mockbuster from "../assets/mockbuster.PNG"
-import { NavLink, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const pages = ['home', 'about', 'addmovie'];
