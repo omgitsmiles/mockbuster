@@ -34,7 +34,7 @@ function App() {
           <SignIn />
         </Route>
         <Route path="/about">
-          <About />
+          <About movies={movies} setMovies={setMovies}/>
         </Route>
         <Route path="/addmovie">
           <AddMovie handleNewMovie={handleNewMovie}/>
