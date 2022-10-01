@@ -2,6 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 import TextField from '@mui/material/TextField';
 
+
 function MoviesPage({movies}) {
 
     const renderMovies = movies.map(movie => (
@@ -10,15 +11,17 @@ function MoviesPage({movies}) {
 
     return (
         <main>
-            <TextField
-              className="navLeft"
-              label="Search Movies"
-              id="standard-size-small"
-              defaultValue="Movies"
-              size="small"
-              variant="standard"
-              />
-                {renderMovies}
+            <br></br>
+        <div>
+        <TextField
+          style={{ color: "white" }}
+          label="Search Movies"
+          id="outlined-size-small"
+          placeholder="Search"
+          size="small"
+        />
+        </div>
+            {renderMovies}
         </main>
     )
 }

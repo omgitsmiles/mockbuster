@@ -38,7 +38,33 @@
   }
 }
 
-.navRight {
+.card {
+  font-size: 1vw;
+  text-align: center;
+  padding: 1rem;
+  width: 18%;
+  height: 20rem;
+  display: inline-block;
+  line-height: .08;
+  margin: 1rem 2rem;
+}
+
+.rentBtn {
+  position: fixed;
+  left: 35%;
+}
+
+
+  button:hover {
+    background: #FFCC00;
+    text-decoration: none;
+  }
+  
+  .searchBar {
+
+  }
+  
+/* .navRight {
   float: right;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
@@ -48,12 +74,6 @@
   float: left;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
-}
+} */
 
-.navHeader {
-  background-color: #FFCC00;
-  /* position: fixed; 
-  top: 0; 
-  width: 100%;  */
 
-}
