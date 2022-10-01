@@ -3,7 +3,6 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import Alert from '@mui/material/Alert';
 
 function MyCart({ cart, setCart }) {
 

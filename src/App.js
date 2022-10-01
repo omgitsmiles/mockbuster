@@ -18,6 +18,10 @@ function App() {
     .then(setMovies)
   }, [])
 
+  function handleNewMovie(newMovie) {
+    setMovies([...movies, newMovie])
+  }
+
   
   return (
     <div className="App">
@@ -33,7 +37,7 @@ function App() {
           <About />
         </Route>
         <Route path="/addmovie">
-          <AddMovie />
+          <AddMovie handleNewMovie={handleNewMovie}/>
         </Route>
         <Route path="/mycart">
           <MyCart cart={cart} setCart={setCart}/>
