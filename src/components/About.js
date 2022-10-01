@@ -8,7 +8,7 @@ function About({ movies, setMovies }) {
 
     function handleNewDescription(e) {
         e.preventDefault()
-        const searched = movies.find(movie => captureTitle.toLowerCase() === movie.title.toLowerCase())
+        const searched = movies.find(movie => captureTitle.toLowerCase().includes(movie.title.toLowerCase()))
         fetch(`http://localhost:3004/movies/${searched.id}`, {
             method: "PATCH",
             headers: {
@@ -21,6 +21,7 @@ function About({ movies, setMovies }) {
             const updated =  movies.map(movie => movie.id === searched.id ? updatedDescription : movie)
             setMovies(updated)
         }))
+        alert("Description has been updated!")
     }
 
     return (
@@ -28,7 +29,7 @@ function About({ movies, setMovies }) {
             <h1>About Us</h1>
             <p>We here at Mockbuster believe nostalgia is the lifeforce of our consumer habits. 
             So to take full advantage we've rebranded what looks familiar to sell old movies.</p>
-            <p>Since the last time we actually since these movies was 30(?!) years ago, if we got the description wrong, help us fix it!</p>
+            <p>Since the last time we actually seen these movies was 30(?!) years ago, if we got the description wrong, help us fix it!</p>
         <form onSubmit={handleNewDescription}>
                 <TextField
                 className="addMovie"
