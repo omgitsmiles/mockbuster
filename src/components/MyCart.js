@@ -15,7 +15,7 @@ function MyCart({ cart, setCart }) {
     function handleRent() {
         const rented = cart.filter(movie => !cart.includes(movie))
         setCart(rented)
-        
+        alert("Your rentals will not ship because this isn't real!")
     }
 
     const renderCart = cart.map(movie => (
@@ -38,7 +38,6 @@ function MyCart({ cart, setCart }) {
            <Link to="/home"><Button style={{ textDecoration: "none" }} variant="contained">Return to shop</Button></Link> ) :
             ( <Button variant="contained" onClick={handleRent}>RENT!</Button> )
            }
-           <Alert severity="success">This is a success alert — check it out!</Alert>
            </div>
         </div>
     )
