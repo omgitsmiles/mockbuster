@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import ResponsiveAppBar from './components/NavBar';
-import { Switch, Route } from 'react-router-dom';
 import MoviesPage from './components/MoviesPage';
-import SignIn from './components/SignIn';
 import About from './components/About';
 import AddMovie from './components/AddMovie';
 import MyCart from './components/MyCart';
@@ -29,9 +28,6 @@ function App() {
       <Switch>
         <Route path="/home">
           <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
-        </Route>
-        <Route path="/signin">
-          <SignIn />
         </Route>
         <Route path="/about">
           <About movies={movies} setMovies={setMovies}/>

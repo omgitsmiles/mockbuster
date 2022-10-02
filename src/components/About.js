@@ -3,12 +3,12 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 function About({ movies, setMovies }) {
-    const [captureTitle, setCaptureTitle] = useState("")
+    const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
 
     function handleNewDescription(e) {
         e.preventDefault()
-        const searched = movies.find(movie => captureTitle.toLowerCase().includes(movie.title.toLowerCase()))
+        const searched = movies.find(movie => title.toLowerCase().includes(movie.title.toLowerCase()))
         if (searched !== undefined) {
         fetch(`http://localhost:3004/movies/${searched.id}`, {
             method: "PATCH",
@@ -18,10 +18,10 @@ function About({ movies, setMovies }) {
             body: JSON.stringify({description: description})
         })
         .then(r => r.json())
-        .then(updatedDescription => movies.map(movie => {
+        .then(updatedDescription => {
             const updated =  movies.map(movie => movie.id === searched.id ? updatedDescription : movie)
             setMovies(updated)
-        }))
+            })
         alert("Description has been updated!")
      } else {
         alert("Write out the full name of the movie!")
@@ -41,7 +41,7 @@ function About({ movies, setMovies }) {
                 id="filled-basic"
                 label="Title"
                 variant="filled"
-                onChange={(e) => setCaptureTitle(e.target.value)}
+                onChange={(e) => setTitle(e.target.value)}
                 />
             <br></br>
             <br></br>
