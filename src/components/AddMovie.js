@@ -19,7 +19,7 @@ function AddMovie({ handleNewMovie }) {
             body: JSON.stringify(newMovie)
         })
         .then(r => r.json())
-        .then(newMovieData =>  handleNewMovie(newMovieData))
+        .then(newMovieData => handleNewMovie(newMovieData))
     }
 
     return (

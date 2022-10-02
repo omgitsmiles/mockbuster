@@ -33,8 +33,10 @@ function MyCart({ cart, setCart }) {
         <div>
            <h1>MY CART</h1>
            {renderCart}
-           <div>{cart.length === 0 ? ( 
-           <Link to="/home"><Button style={{ textDecoration: "none" }} variant="contained">Return to shop</Button></Link> ) :
+           <div>{cart.length === 0 ? (<div>
+            <h3>Your cart is currently empty</h3>
+           <Link to="/home"><Button style={{ textDecoration: "none" }} variant="contained">Return to shop</Button></Link>
+           </div> ) :
             ( <Button variant="contained" onClick={handleRent}>RENT!</Button> )
            }
            </div>
