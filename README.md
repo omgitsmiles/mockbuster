@@ -2,9 +2,11 @@
 
 ![Mockbuster](https://imgur.com/a/cYe6SiT)
 
-## Available Scripts
+## Built with
 
-In the project directory, you can run:
+React.js
+Material UI
+db.json server
 
 ### `npm start`
 
