@@ -1,6 +1,6 @@
 # Mockbuster
 
-![Mockbuster](https://imgur.com/a/cYe6SiT)
+![Mockbuster](https://github.com/omgitsmiles/mockbuster/blob/main/mockbuster.PNG)
 
 ## Built with
 
