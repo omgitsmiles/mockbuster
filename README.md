@@ -1,6 +1,6 @@
 # Mockbuster
 
-![Mockbuster](https://imgur.com/YoEyHy6)
+![Mockbuster](https://imgur.com/a/cYe6SiT)
 
 ## Available Scripts
 
