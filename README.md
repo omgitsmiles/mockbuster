@@ -1,6 +1,6 @@
 # Mockbuster
 
-![Mockbuster]()
+![Mockbuster](https://github.com/omgitsmiles/mockbuster/blob/main/mockbuster.PNG)
 
 ## Built with
 
@@ -16,10 +16,11 @@ Along with npm start, the db.json server can be run with terminal command npm ru
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### App function
+### About Mockbuster
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A pared down clone of the old video rental store, Blockbuster. Imitating the UI rental experience.
+
+![Homepage]
 
 ### `npm run build`
 
