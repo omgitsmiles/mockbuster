@@ -33,5 +33,5 @@ A pared down clone of the old video rental store, Blockbuster. Imitating the UI 
 The Mockbuster logo designed by [DCHK](https://www.instagram.com/dchk/)
 
 ### Contact
-Paolo Alberca [Email](paolo.alberca@gmail.com) - [LinkedIn](https://www.linkedin.com/in/paolo-alberca-069384b8/)
+Paolo Alberca [Email](mailto:paolo.alberca@gmail.com) - [LinkedIn](https://www.linkedin.com/in/paolo-alberca-069384b8/)
 
