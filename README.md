@@ -20,17 +20,14 @@ You may also see any lint errors in the console.
 
 A pared down clone of the old video rental store, Blockbuster. Imitating the UI rental experience.
 
-![Homepage]
+![Homepage](https://github.com/omgitsmiles/mockbuster/blob/main/homepage.png)
 
-### `npm run build`
+### User Experience
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Can view 20 movies available to rent
+- Add to cart to rent with ability to add or remove items.
+- Movie not available or in stock? Request movie in add movie page to be available next time you visit.
+- Description can to be updated to backend and DOM to reflect and persist the changes. 
 
 ### `npm run eject`
 
