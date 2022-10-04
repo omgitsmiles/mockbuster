@@ -15,7 +15,7 @@ You may also see any lint errors in the console.
 ### About Mockbuster
 A pared down clone of the old video rental store, Blockbuster. Imitating the UI rental experience.
 
-Homepage
+![homepage](https://github.com/omgitsmiles/mockbuster/blob/main/homepage.png)
 
 ### User Experience
 - Can view 20 movies available to rent
@@ -24,7 +24,7 @@ Homepage
 - Description can to be updated to backend and DOM to reflect and persist the changes.
 - Contributors
 
-The Mockbuster logo designed by DCHK
+The Mockbuster logo designed by [DCHK](https://www.instagram.com/dchk/)
 
 ### Contact
-Paolo Alberca Email - LinkedIn
+Paolo Alberca [Email](mailto:paolo.alberca@gmail.com) - [LinkedIn](https://www.linkedin.com/in/paolo-alberca-069384b8/)
