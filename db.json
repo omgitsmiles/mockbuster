@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Lion King",
-      "description": "luke i am your father",
+      "description": "movie about big cats",
       "image": "https://imgix.bustle.com/2017/2/13/69251870-b356-4e05-9696-5459ee4301e4.jpg?w=414&h=678&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": 4,
       "title": "Beauty And The Beast",
-      "description": "Tale as old as time",
+      "description": "GARCON ",
       "image": "https://imgix.bustle.com/2017/2/13/04fbf5ca-fd79-40d9-bc26-ea28e7b92cde.png?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
     },
     {
@@ -57,13 +57,13 @@
     {
       "id": 10,
       "title": "Honey, I Shrunk The Kids",
-      "description": "Rick Moranis",
+      "description": "a movie about shrinking",
       "image": "https://imgix.bustle.com/2017/2/13/a9dd7457-88e7-405f-a534-c6c4ca92ed35.jpg?w=632&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
     },
     {
       "id": 11,
       "title": "The Monster Squad",
-      "description": "No Clue",
+      "description": "a movie about monster",
       "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Monstersquadposter.jpg"
     },
     {

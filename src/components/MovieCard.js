@@ -9,6 +9,7 @@ import { CardActionArea, Button, CardActions } from '@mui/material';
 function MovieCard({ movie, setCart, cart }){
   const [rent, isRented] = useState(true)
 
+
   function handleClick(addedMovie) {
     isRented(rent => !rent)
     setCart([...cart, addedMovie])
@@ -37,6 +38,7 @@ function MovieCard({ movie, setCart, cart }){
       <Button variant="contained" onClick={() => handleClick(movie)} className="rentBtn">Rent</Button> ) : (
       <Button variant="contained" className="rentBtn" disabled>In Cart</Button> )
         }
+       
       </CardActions>
     </Card>
     

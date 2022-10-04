@@ -52,6 +52,8 @@
 .cartCard {
   display: inline-block;
   padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .cImage {

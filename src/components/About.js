@@ -26,6 +26,12 @@ function About({ movies, setMovies }) {
      } else {
         alert("Write out the full name of the movie!")
      } 
+        clearForm()
+    }
+
+    function clearForm() {
+        setTitle("")
+        setDescription("")
     }
 
     return (
@@ -33,7 +39,7 @@ function About({ movies, setMovies }) {
             <h1>About Us</h1>
             <p>We here at Mockbuster believe nostalgia is the lifeforce of our consumer habits. 
             So to take full advantage we've rebranded what looks familiar to sell old movies.</p>
-            <p>Since the last time we actually seen these movies was 30(?!) years ago, if we got the description wrong, help us fix it!</p>
+            <p>Since the last time we've actually seen these movies was 30(?!) years ago, if we got the description wrong, help us fix it!</p>
         <form onSubmit={handleNewDescription}>
                 <TextField
                 className="addMovie"
@@ -41,6 +47,7 @@ function About({ movies, setMovies }) {
                 id="filled-basic"
                 label="Title"
                 variant="filled"
+                value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 />
             <br></br>
@@ -51,6 +58,7 @@ function About({ movies, setMovies }) {
                 id="filled-basic"
                 label="Description"
                 variant="filled"
+                value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 />
             <br></br>

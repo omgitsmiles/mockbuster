@@ -21,14 +21,10 @@ function App() {
     setMovies([...movies, newMovie])
   }
 
-  
   return (
     <div className="App">
       <ResponsiveAppBar cart={cart}/>
       <Switch>
-        <Route path="/home">
-          <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
-        </Route>
         <Route path="/about">
           <About movies={movies} setMovies={setMovies}/>
         </Route>
@@ -38,8 +34,11 @@ function App() {
         <Route path="/mycart">
           <MyCart cart={cart} setCart={setCart}/>
         </Route>
+        <Route exact path="/">
+          <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
+        </Route>
         <Route exact path="*">
-          <h1> 404 BE KIND, REWIND</h1>
+          <h1>404 BE KIND, REWIND</h1>
         </Route>
       </Switch>
     </div>
