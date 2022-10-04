@@ -20,10 +20,6 @@ function AddMovie({ handleNewMovie }) {
         })
         .then(r => r.json())
         .then(newMovieData => handleNewMovie(newMovieData))
-        clearForm()
-    }
-
-    function clearForm() {
         setTitle("")
         setDescription("")
         setImage("")

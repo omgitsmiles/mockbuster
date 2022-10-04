@@ -25,6 +25,9 @@ function App() {
     <div className="App">
       <ResponsiveAppBar cart={cart}/>
       <Switch>
+      <Route path="/home">
+          <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
+        </Route>
         <Route path="/about">
           <About movies={movies} setMovies={setMovies}/>
         </Route>
@@ -33,9 +36,6 @@ function App() {
         </Route>
         <Route path="/mycart">
           <MyCart cart={cart} setCart={setCart}/>
-        </Route>
-        <Route exact path="/">
-          <MoviesPage movies={movies} setCart={setCart} cart={cart}/>
         </Route>
         <Route exact path="*">
           <h1>404 BE KIND, REWIND</h1>

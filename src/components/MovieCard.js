@@ -12,7 +12,7 @@ function MovieCard({ movie, setCart, cart }){
 
   function handleClick(addedMovie) {
     isRented(rent => !rent)
-    setCart([...cart, addedMovie])
+    return !cart.includes(addedMovie) ? setCart([...cart, addedMovie]) : alert("Already in your cart!")
   }
 
     return (

@@ -27,7 +27,7 @@ function MyCart({ cart, setCart }) {
                 </IconButton>
             </div>
         </div>
-        ))
+    ))
 
     return (
         <div>

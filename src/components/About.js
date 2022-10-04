@@ -26,12 +26,8 @@ function About({ movies, setMovies }) {
      } else {
         alert("Write out the full name of the movie!")
      } 
-        clearForm()
-    }
-
-    function clearForm() {
-        setTitle("")
-        setDescription("")
+     setTitle("")
+     setDescription("")
     }
 
     return (
