@@ -1,5 +1,5 @@
 ### Mockbuster
-[mockbuster](https://github.com/omgitsmiles/mockbuster/blob/main/mockbuster.PNG)
+![mockbuster](https://github.com/omgitsmiles/mockbuster/blob/main/mockbuster.PNG)
 
 ### Built with
 - React.js
