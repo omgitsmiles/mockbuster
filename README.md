@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Mockbuster
 
 ![Mockbuster](https://github.com/omgitsmiles/mockbuster/blob/main/mockbuster.PNG)
@@ -60,13 +57,10 @@ A pared down clone of the old video rental store, Blockbuster. Imitating the UI 
 - Description can to be updated to backend and DOM to reflect and persist the changes.
 - Contributors
 
->>>>>>> b1226293ad3391c32f921efa2da6cc489482148d
+
 The Mockbuster logo designed by [DCHK](https://www.instagram.com/dchk/)
 
 ### Contact
 Paolo Alberca [Email](mailto:paolo.alberca@gmail.com) - [LinkedIn](https://www.linkedin.com/in/paolo-alberca-069384b8/)
 <<<<<<< HEAD
 
->>>>>>> 7f49f2b429926c097a541d326bbb51401c33dad0
-=======
->>>>>>> b1226293ad3391c32f921efa2da6cc489482148d
