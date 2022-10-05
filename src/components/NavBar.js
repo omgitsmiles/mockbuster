@@ -16,7 +16,7 @@ import mockbuster from "../assets/mockbuster.PNG"
 import { Link } from "react-router-dom"
 
 
-const pages = ['home', 'about', 'addmovie'];
+const pages = ['home', 'about', 'add movie'];
 const settings = ['mycart'];
 
 function ResponsiveAppBar ({ cart }) {
@@ -75,7 +75,7 @@ function ResponsiveAppBar ({ cart }) {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                  <Link style={{ textDecoration: "none", color: "white" }} to={`/${page}`}>{page}</Link>
+                  <Link style={{ textDecoration: "none", color: "white" }} to={`/${page.split(' ').join('')}`}>{page}</Link>
                   </Typography>
                 </MenuItem>
               ))}
@@ -106,7 +106,7 @@ function ResponsiveAppBar ({ cart }) {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-               <Link style={{ textDecoration: "none", color: "white" }}to={`/${page}`}>{page}</Link>
+               <Link style={{ textDecoration: "none", color: "white" }}to={`/${page.split(' ').join('')}`}>{page}</Link>
               </Button>
             ))}
           </Box>
