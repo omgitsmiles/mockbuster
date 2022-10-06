@@ -12,8 +12,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
 import mockbuster from "../assets/mockbuster.PNG"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 
 const pages = ['home', 'about', 'add movie'];
@@ -37,6 +38,12 @@ function ResponsiveAppBar ({ cart }) {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  let history = useHistory() 
+
+  function handleRedirect() {
+    history.push("/mycart")
+  }
 
   return (
     <AppBar position="static">
@@ -113,9 +120,11 @@ function ResponsiveAppBar ({ cart }) {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <Badge badgeContent={cart.length} color="secondary" >
+              <IconButton onClick={handleRedirect} sx={{ p: 0 }}>
                 <ShoppingCartCheckoutIcon />
               </IconButton>
+              </Badge>
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
