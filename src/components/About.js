@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import Autocomplete from '@mui/material/Autocomplete';
+import { Button } from "@mui/material";
 
-function About({ movies, setMovies }) {
-    const [title, setTitle] = useState("")
+
+function About({ setMovies, movies }) {
+    const [select, setSelect] = useState("")
     const [description, setDescription] = useState("")
 
     function handleNewDescription(e) {
         e.preventDefault()
-        const searched = movies.find(movie => title.toLowerCase().includes(movie.title.toLowerCase()))
+        const searched = movies.find(movie => select === movie.title)
         if (searched !== undefined) {
         fetch(`http://localhost:3004/movies/${searched.id}`, {
             method: "PATCH",
@@ -23,30 +25,32 @@ function About({ movies, setMovies }) {
             setMovies(updated)
             })
         alert("Description has been updated!")
-     } else {
-        alert("Write out the full name of the movie!")
-     } 
-     setTitle("")
-     setDescription("")
-    }
+        } else {
+            alert("Select Your Movie Below!")
+        }
+        setDescription("")
+        } 
+    
+
+    const renderMovies = movies.map(movie => movie.title)
 
     return (
         <div>
-            <h1>About Us</h1>
+                        <h1>About Us</h1>
             <p>We here at Mockbuster believe nostalgia is the lifeforce of our consumer habits. 
             So to take full advantage we've rebranded what looks familiar to sell old movies.</p>
             <p>Since the last time we've actually seen these movies was 30(?!) years ago, if we got the description wrong, help us fix it!</p>
         <form onSubmit={handleNewDescription}>
-                <TextField
-                className="addMovie"
-                required
-                id="filled-basic"
-                label="Title"
-                variant="filled"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                />
             <br></br>
+                <Autocomplete
+                className="aboutTest"
+                disablePortal
+                id="combo-box-demo"
+                options={renderMovies}
+                sx={{ width: 300 }}
+                onSelect={e => setSelect(e.target.value)}
+                renderInput={(params) => <TextField {...params} label="Movie" />}
+                />
             <br></br>
                 <TextField
                 className="addMovie"
@@ -54,8 +58,7 @@ function About({ movies, setMovies }) {
                 id="filled-basic"
                 label="Description"
                 variant="filled"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                onChange={e => setDescription(e.target.value)}
                 />
             <br></br>
             <br></br>

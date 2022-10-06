@@ -8,6 +8,12 @@
   pointer-events: none;
 }
 
+.aboutTest {
+  background-color: whitesmoke;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
